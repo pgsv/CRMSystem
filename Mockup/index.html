@@ -27,17 +27,73 @@
             <tr>
                 <th>郵便番号 *必須</th>
                 <td>
-                    <input type="text">
-                    <span>　―　</span>
-                    <input type="text">
+                    <input type="text" maxlength="3">
+                    <span>-</span>
+                    <input type="text" maxlength="4">
                     <input type="button" value="住所検索">
                 </td>
             </tr>
             <tr>
                 <th>都道府県／市区町村　*必須</th>
                 <td>
-                    
+                    <select name="todohuken-list" id="todohuken-list">
+                        <option value="1">東京都</option>
+                        <option value="2">埼玉県</option>
+                        <option value="3">京都府</option>
+                    </select>  
+                    <select name="sikutyoson-list" id="sikutyoson-list">
+                        <option value="1">A市</option>
+                        <option value="2">B町</option>
+                        <option value="3">C村</option>
+                    </select>             
                 </td>
+            </tr>
+            <tr>
+                <th>マンション名等</th>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <th>生年月日</th>
+                <td><select name="gengo" id="gengo">
+                        <option value="1">昭和</option>
+                        <option value="2">平成</option>
+                        <option value="3">令和</option>
+                    </select>
+                    <input type="text">年
+                    <input type="text">月
+                    <input type="text">日
+                </td>
+            </tr>
+            <tr>
+                <th>性別</th>
+                <td>
+                    <input type="radio" value="1">男
+                    <input type="radio" value="2">女
+                </td>         
+            </tr>
+            <tr>
+                <th>電話番号</th>
+                <td>
+                    <input type="text">-
+                    <input type="text">-
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <th>FAX番号</th>
+                <td>
+                    <input type="text">-
+                    <input type="text">-
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <th>メールアドレス *必須</th>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <th>パスワード *必須</th>
+                <td><input type="text"></td>
             </tr>
         </table>
     </body>
